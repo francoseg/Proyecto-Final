@@ -1,0 +1,172 @@
+// anidacion del estilo del main y footer home//
+
+
+/* main */
+
+header {
+  nav {
+    background-color: rgb(4, 141, 141);
+  }
+}
+
+main {
+  background-color: rgb(255, 253, 251);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 3rem 3rem 3rem;
+  color: #19195e;
+
+  div {
+    img {
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+    }
+  }
+
+  h1 {
+    position: relative;
+    top: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: -45px;
+    z-index: 0;
+  }
+}
+
+.encabezado {
+  color: rgb(25, 25, 94);
+}
+
+.image-dos,
+.oso-code-des,
+.p {
+  display: none;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-left: -10px;
+  background-color: rgb(255, 253, 251);
+}
+
+.p2 {
+  text-align: center;
+  margin-top: -60px;
+  margin-left: -60px;
+  color: black;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .image-dos {
+    display: block;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .image-uno {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding-left: 20%;
+  }
+
+  .image-dos {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .oso-coder-des {
+    display: block;
+  }
+
+  .p {
+    display: block;
+    background-color: rgb(255, 253, 251);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    margin-left: -80px;
+    margin-top: -180px;
+    font-size: 20px;
+  }
+
+  .image-tres {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    position: relative;
+    top: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 45px;
+  }
+
+  .encabezado {
+    color: rgb(25, 25, 94);
+  }
+
+  h2 {
+    position: absolute;
+    top: 450px;
+    text-align: center;
+    margin-left: -160px;
+  }
+
+  .subtitulo {
+    width: 80px;
+  }
+
+  .p2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+  }
+}
+
+/* footer*/
+
+.flex-container {
+  background-color: rgb(4, 141, 141);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .image a:visited {
+    color: whitesmoke;
+    background-color: rgb(4, 141, 141);
+    width: 3rem;
+    height: 3rem;
+    margin: 5px;
+    gap: 1.5rem;
+  }
+}
+
+.footer-color {
+  background-color: rgb(4, 141, 141);
+}
+
+p {
+  text-align: center;
+  background-color: rgb(4, 141, 141);
+  height: 10vh;
+  font-size: 1rem;
+}
